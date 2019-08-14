@@ -1,0 +1,11 @@
+{{#if logoIsShowing}}
+  <button class="ui button"{{action "hideLogo"}}>
+    Hide Logo
+  </button>
+  <br><br>
+  <img class="image2" src="/assets/images/uwindsor_logo.png" alt="" style="margin-left: 300px">
+{{else}}
+  <button class = "ui button" {{action "showLogo"}}>
+    Show Logo
+  </button>
+{{/if}}

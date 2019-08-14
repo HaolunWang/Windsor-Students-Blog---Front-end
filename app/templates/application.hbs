@@ -1,0 +1,45 @@
+<html>
+<style>
+  .image{
+    margin-left: 600px;
+    background-position: center;
+
+  }
+</style>
+<div class="segment">
+  <div class="image">
+    <img class="image1" src="/assets/images/uwindsor_logo.png" alt="" width="300" height="350">
+  </div>
+</div>
+<div class="container">
+  <div class="menu">
+    {{#link-to "index"}}
+      <h1>
+        <i class="home icon"></i>
+        <em>Home</em>
+      </h1>
+    {{/link-to}}
+    <div class="links">
+      {{#link-to "posts" class="menu-posts"}}
+        Posts
+      {{/link-to}}
+      {{#link-to "about" class="menu-about"}}
+        About
+      {{/link-to}}
+      {{#link-to "contact" class="menu-contact"}}
+        Contact
+      {{/link-to}}
+    </div>
+  </div>
+  <div class="body">
+    {{outlet}}
+  </div>
+</div>
+
+</html>
+
+<div class="ui padded grid" >
+  <div class="fourteen wide column">
+    &copy;2019 Allen's Publishing, Inc.
+  </div>
+</div>
